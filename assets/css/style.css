@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.10fr 1.8fr 0.10fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 2em;
+    grid-template-areas: 
+    ". header ."
+    ". schedule ."
+    ". form .";
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    border: 1px solid #2D7CB7;
+    border-radius: 4px;
+}
+.train-schedule {
+    grid-area: schedule;
+    border: 1px solid #2D7CB7;
+    border-radius: 4px;
+}
+.form {
+    grid-area: form;
+    border: 1px solid #2D7CB7;
+    margin-bottom: 2em;
+    border-radius: 4px;
+}
+
+.jumbotron {
+    background-color: #81452D;
+    color: #fff;
+}
+.sub-header {
+    background-color: #2D7CB7;
+    color: #fff;
+}
